@@ -5,11 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "getdaft>=0.3.15",
     "grpcio-status>=1.68.1",
     "grpcio>=1.68.1",
     "pandas>=2.2.3",
     "protobuf>=5.29.1",
     "pyspark>=3.5.3",
     "setuptools>=75.6.0",
+    "getdaft>=0.3.15",
 ]

@@ -1,11 +1,8 @@
 def main():
-    # start Daft Connect (spark connect compatible server)
+    # start Daft Connect (spark-connect compatible server)
     handle = connect_start("sc://0.0.0.0:15002")
 
-    # The port the daft connect server is running on
-    port = handle.port()
-    assert port == 15002
-
+    # create a Spark Connect client connected to the Daft Connect server
     spark = SparkSession.builder \
         .remote(f"sc://localhost:15002") \
         .appName("DaftPySparkExample") \
@@ -17,7 +14,15 @@ def main():
     
     # Show the DataFrame
     print("Original DataFrame:")
-    print(df.toPandas())
+    print(df)
+
+    # Show the frame as a pandas DataFrame
+    pandas_df = df.toPandas()
+    print("Pandas DataFrame:")
+    print(pandas_df)
+
+    # shutdown the daft-connect server
+    handle.shutdown()
 
 
 if __name__ == "__main__":
