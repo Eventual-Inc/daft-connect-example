@@ -10,9 +10,8 @@ def main():
 
     print()
 
-    # Create a simple Spark DataFrame with a range
-    df = spark.range(1, 5)
-
+    # Read mvp.parquet from the local filesystem
+    df = spark.read.parquet("mvp.parquet")
 
     # Show the DataFrame
     print("Original DataFrame:")

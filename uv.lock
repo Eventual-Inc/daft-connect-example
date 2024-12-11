@@ -26,7 +26,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "getdaft", specifier = ">=0.3.14" },
+    { name = "getdaft", git = "https://github.com/Eventual-Inc/Daft.git" },
     { name = "grpcio", specifier = ">=1.68.1" },
     { name = "grpcio-status", specifier = ">=1.68.1" },
     { name = "pandas", specifier = ">=2.2.3" },
@@ -46,19 +46,12 @@ wheels = [
 
 [[package]]
 name = "getdaft"
-version = "0.3.14+dev0018.8052de7a"
-source = { registry = "https://pypi.anaconda.org/daft-nightly/simple" }
+version = "0.3.0.dev0"
+source = { git = "https://github.com/Eventual-Inc/Daft.git#8d93a270f71e389d41a7f9c05e094748ed658c3b" }
 dependencies = [
     { name = "fsspec" },
     { name = "pyarrow" },
     { name = "tqdm" },
-]
-wheels = [
-    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-macosx_10_12_x86_64.whl" },
-    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-macosx_11_0_arm64.whl" },
-    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl" },
-    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" },
-    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-win_amd64.whl" },
 ]
 
 [[package]]
