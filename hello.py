@@ -18,6 +18,11 @@ def main():
     print(df)
 
     print()
+    
+    # Show some basic operations on the DataFrame
+    print("Sum of column 'a':", df.agg({"a": "sum"}).collect()[0][0])
+
+    print()
 
     # Show the frame as a pandas DataFrame
     pandas_df = df.toPandas()
