@@ -8,13 +8,17 @@ def main():
         .appName("DaftPySparkExample") \
         .getOrCreate()
 
+    print()
 
     # Create a simple Spark DataFrame with a range
     df = spark.range(1, 5)
-    
+
+
     # Show the DataFrame
     print("Original DataFrame:")
     print(df)
+
+    print()
 
     # Show the frame as a pandas DataFrame
     pandas_df = df.toPandas()

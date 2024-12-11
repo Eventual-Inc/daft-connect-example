@@ -26,7 +26,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "getdaft", specifier = ">=0.3.15" },
+    { name = "getdaft", specifier = ">=0.3.14" },
     { name = "grpcio", specifier = ">=1.68.1" },
     { name = "grpcio-status", specifier = ">=1.68.1" },
     { name = "pandas", specifier = ">=2.2.3" },
@@ -46,20 +46,19 @@ wheels = [
 
 [[package]]
 name = "getdaft"
-version = "0.3.15"
-source = { registry = "https://pypi.org/simple" }
+version = "0.3.14+dev0018.8052de7a"
+source = { registry = "https://pypi.anaconda.org/daft-nightly/simple" }
 dependencies = [
     { name = "fsspec" },
     { name = "pyarrow" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/8e/1cdb8160ece3e9a04167f56397dee1b732ac89c9e33ec4f4f2e3fe8938a5/getdaft-0.3.15.tar.gz", hash = "sha256:101726149ff611c6976f59670bf4fae82c9b939ae4a8d812d88a1cb824c1bca1", size = 3944224 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/54/826911d45c83db1f814706db870e862d5e1d54a149785d3aa9a525ef4de7/getdaft-0.3.15-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:7f85b0a4b5937419e8845b4718a473f097d900f1b43efa87140397fc7eff2e75", size = 30533767 },
-    { url = "https://files.pythonhosted.org/packages/1a/18/85c6ba0f3b3351df40ea6288531e35b9e937acb49624a921b131a560cb18/getdaft-0.3.15-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:3ece3de1a32c83e1ab641e41a3c8d4656cf356848b9c7d1b00564c359c30d6be", size = 28269913 },
-    { url = "https://files.pythonhosted.org/packages/59/ae/b39147086750b3a8ce11e0dec62221c32ee42f9726d0265080010c49ef63/getdaft-0.3.15-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:add1ba84c4a45a57c909730f39c96b1e8c9716bf7646d78164680d62899c4f0e", size = 32163170 },
-    { url = "https://files.pythonhosted.org/packages/60/39/5cf0d7b42fd5a450334c3da5c0d937ee6951f1345db08f5114760090a146/getdaft-0.3.15-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7f5486f86056427665668a69efa7dbd8361eff262f20d3c73767906dee0f5d55", size = 33786057 },
-    { url = "https://files.pythonhosted.org/packages/83/c1/95000f2923478e76b74f3370c6a7b1edf6ca90ca01bf26c6ba730461a096/getdaft-0.3.15-cp38-abi3-win_amd64.whl", hash = "sha256:2c03a3ea203582004b664742f6bad5975fae9f02281942edc46b2b17622040a4", size = 30843900 },
+    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-macosx_10_12_x86_64.whl" },
+    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-macosx_11_0_arm64.whl" },
+    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl" },
+    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl" },
+    { url = "https://pypi.anaconda.org/daft-nightly/simple/getdaft/0.3.14+dev0018.8052de7a/getdaft-0.3.14+dev0018.8052de7a-cp38-abi3-win_amd64.whl" },
 ]
 
 [[package]]
