@@ -10,24 +10,11 @@ def main():
 
     print()
 
-    # Read mvp.parquet from the local filesystem
-    df = spark.read.parquet("mvp.parquet")
+    data = [[2021, "test", "Albany", "M", 42]]
+    columns = ["Year", "First_Name", "County", "Sex", "Count"]
 
-    # Show the DataFrame
-    print("Original DataFrame:")
-    print(df)
-
-    print()
-    
-    # Show some basic operations on the DataFrame
-    print("Sum of column 'a':", df.agg({"a": "sum"}).collect()[0][0])
-
-    print()
-
-    # Show the frame as a pandas DataFrame
-    pandas_df = df.toPandas()
-    print("Pandas DataFrame:")
-    print(pandas_df)
+    df1 = spark.createDataFrame(data, schema="Year int, First_Name STRING, County STRING, Sex STRING, Count int")
+    df1.show()
 
     # shutdown the daft-connect server
     handle.shutdown()
